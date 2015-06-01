@@ -1,0 +1,29 @@
+{
+  "name": "wobbly-warbler",
+  "version": "1.0.0",
+  "description": "A twitter like application",
+  "main": "server.js",
+  "scripts": {
+    "test": "node nodeTest.js",
+    "start": "node server.js",
+    "coverage": "./node_modules/.bin/istanbul cover nodeTest.js",
+    "nodemon": "./node_modules/.bin/nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodersInDev/wobbly-warbler.git"
+  },
+  "keywords": [
+    "wobbly",
+    "warble"
+  ],
+  "author": "CodersInDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodersInDev/wobbly-warbler/issues"
+  },
+  "homepage": "https://github.com/CodersInDev/wobbly-warbler",
+  "devDependencies": {
+    "istanbul": "^0.3.14"
+  }
+}
