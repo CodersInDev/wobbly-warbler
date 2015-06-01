@@ -1,25 +1,30 @@
-var warblers = {endpoints: {},
-	list:[{id: 1, content: "first warble", timestamp: "2015/06/01"}]
+var listWarbles = [{id: 1, content: "first warble", timestamp: "2015/06/01"}];
+var warblers = {};
+var fs = require('fs');
+
+warblers["GET /"] = function (request, response) {
+	fs.readFile(__dirname + "/index.html", function (err, data){
+	  response.write(data.toString());
+	  response.end();
+  });
 };
 
-
-warblers.endpoints["GET /"] = function (request, response) {
+warblers["GET /warbles"] = function (request, response) {
 	response.write(JSON.stringify(warblers.list));
-	console.log(JSON.stringify(warblers.list));
 	response.end();
 };
 
-warblers.endpoints["GET /warbles"] = function (request, response) {
-	response.write(JSON.stringify(warblers.list));
-	console.log(JSON.stringify(warblers.list));
-	response.end();
+warblers.generic = function (request, response){
+	fs.readFile(__dirname + request.url, function (err, data){
+	  if(err){
+			fs.readFile(__dirname + "/404.html", function (err, data){
+	      response.write(data.toString());
+			  response.end();
+			});
+		}else{
+			response.write(data.toString());
+		}
+  });
 };
-
-warblers.endpoints.generic = function (request, response) {
-	console.log('all other requests');
-};
-
-
-
 
 module.exports = warblers;
