@@ -20,7 +20,6 @@
   },
   "pre-commit": [
     "jshint",
-    "coverage",
-    "codeclimate"
+    "coverage"
   ]
  }
