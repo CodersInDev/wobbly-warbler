@@ -1,18 +1,25 @@
+var warblers = {endpoints: {},
+	list:[{id: 1, content: "first warble", timestamp: "2015/06/01"}]
+};
 
-var warblers = {};
 
-warblers["GET /"] = function (request, response) {
-	response.write("this is my first url");
+warblers.endpoints["GET /"] = function (request, response) {
+	response.write(JSON.stringify(warblers.list));
+	console.log(JSON.stringify(warblers.list));
 	response.end();
 };
 
-warblers["GET /warbles"] = function (request, response) {
-	response.write("list of warbles")
+warblers.endpoints["GET /warbles"] = function (request, response) {
+	response.write(JSON.stringify(warblers.list));
+	console.log(JSON.stringify(warblers.list));
 	response.end();
 };
 
-warblers.generic = function (request, response) {
+warblers.endpoints.generic = function (request, response) {
 	console.log('all other requests');
 };
+
+
+
 
 module.exports = warblers;
