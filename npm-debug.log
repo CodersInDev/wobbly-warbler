@@ -1,0 +1,21 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'nodemon',
+1 verbose cli   'server.js' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.25
+4 error Error: ENOENT, open '/home/anita/Founders/week4/wobbly-warbler/node_modules/nodemon/package.json'
+5 error If you need help, you may report this *entire* log,
+5 error including the npm and node versions, at:
+5 error     <http://github.com/npm/npm/issues>
+6 error System Linux 3.16.0-37-generic
+7 error command "/usr/bin/nodejs" "/usr/bin/npm" "run" "nodemon" "server.js"
+8 error cwd /home/anita/Founders/week4/wobbly-warbler
+9 error node -v v0.10.25
+10 error npm -v 1.4.21
+11 error path /home/anita/Founders/week4/wobbly-warbler/node_modules/nodemon/package.json
+12 error code ENOENT
+13 error errno 34
+14 verbose exit [ 34, true ]
