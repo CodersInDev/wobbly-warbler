@@ -3,7 +3,7 @@ var warblers = require("./warblers.js");
 
 
 http.createServer(function (request, response) {
-	console.log(request.url);
+	console.log('request: ' + request.url);
 	var warbler = warblers[request.method + " " + request.url];
 
 	if(warbler){

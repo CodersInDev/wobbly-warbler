@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node nodeTest.js",
     "start": "node server.js",
-    "coverage": "./node_modules/.bin/istanbul cover nodeTest.js"
+    "coverage": "./node_modules/.bin/istanbul cover nodeTest.js",
+    "nodemon": "./node_modules/.bin/nodemon ./server.js"
   },
   "repository": {
     "type": "git",
