@@ -1,25 +1,25 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'nodemon' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'jshint' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.38
 4 verbose node symlink /usr/bin/node
-5 verbose run-script [ 'prenodemon', 'nodemon', 'postnodemon' ]
-6 info prenodemon wobbly-warbler@1.0.0
-7 info nodemon wobbly-warbler@1.0.0
+5 verbose run-script [ 'prejshint', 'jshint', 'postjshint' ]
+6 info prejshint wobbly-warbler@1.0.0
+7 info jshint wobbly-warbler@1.0.0
 8 verbose unsafe-perm in lifecycle true
-9 info wobbly-warbler@1.0.0 Failed to exec nodemon script
-10 error wobbly-warbler@1.0.0 nodemon: `nodemon ./server.js`
-10 error Exit status 127
-11 error Failed at the wobbly-warbler@1.0.0 nodemon script.
+9 info wobbly-warbler@1.0.0 Failed to exec jshint script
+10 error wobbly-warbler@1.0.0 jshint: `jshint -c .jshintrc --exclude-path .gitignore .`
+10 error Exit status 2
+11 error Failed at the wobbly-warbler@1.0.0 jshint script.
 11 error This is most likely a problem with the wobbly-warbler package,
 11 error not with npm itself.
 11 error Tell the author that this fails on your system:
-11 error     nodemon ./server.js
+11 error     jshint -c .jshintrc --exclude-path .gitignore .
 11 error You can get their info via:
 11 error     npm owner ls wobbly-warbler
 11 error There is likely additional logging output above.
 12 error System Linux 3.13.0-53-generic
-13 error command "/usr/bin/node" "/usr/bin/npm" "run" "nodemon"
+13 error command "/usr/bin/node" "/usr/bin/npm" "run" "jshint"
 14 error cwd /home/simon/Desktop/founders and Coders/wobbly-warbler
 15 error node -v v0.10.38
 16 error npm -v 1.4.28
