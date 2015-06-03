@@ -1,7 +1,6 @@
 {
   "name": "wobbly-warbler",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "A twitter like application",
   "main": "server.js",
   "scripts": {
@@ -25,19 +24,18 @@
   },
   "homepage": "https://github.com/CodersInDev/wobbly-warbler",
   "devDependencies": {
-    "istanbul": "^0.3.14"
-  }
-}
-=======
-  "description": "Kind of like Twitter",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/CodersInDev/wobbly-warbler"
-  },
-  "devDependencies": {
     "istanbul": "^0.3.14",
     "pre-commit": "0.0.9"
   },
+  "pre-commit": [
+    "jshint",
+    "coverage"
+  ]
+}
+<<<<<<< HEAD
+=======
+
+,
   "scripts": {
     "test": "node ./test/test.js",
     "nocov": "node test/*.js",
@@ -46,9 +44,5 @@
     "start": "node ./server.js",
     "nodemon": "nodemon ./server.js"
   },
-  "pre-commit": [
-    "jshint",
-    "coverage"
-  ]
+
  }
->>>>>>> 1967f0b214eb578663f15964c41fcce215e8717e
