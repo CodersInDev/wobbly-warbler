@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -28,3 +29,6 @@ node_modules
 
 # Mac users
 .DS_Store
+=======
+npm-debug.log
+>>>>>>> 50f4ba43f1b7705c38887256a488227b63afafdd

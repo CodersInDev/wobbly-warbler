@@ -1,25 +1,30 @@
 {
   "name": "wobbly-warbler",
   "version": "1.0.0",
-  "description": "Kind of like Twitter",
+  "description": "A twitter like application",
+  "main": "server.js",
+  "scripts": {
+    "test": "node nodeTest.js",
+    "start": "node server.js",
+    "coverage": "./node_modules/.bin/istanbul cover nodeTest.js",
+    "nodemon": "./node_modules/.bin/nodemon ./server.js"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CodersInDev/wobbly-warbler"
+    "url": "https://github.com/CodersInDev/wobbly-warbler.git"
   },
+  "keywords": [
+    "wobbly",
+    "warble"
+  ],
+  "author": "CodersInDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodersInDev/wobbly-warbler/issues"
+  },
+  "homepage": "https://github.com/CodersInDev/wobbly-warbler",
   "devDependencies": {
-    "istanbul": "^0.3.14",
-    "pre-commit": "0.0.9"
-  },
-  "scripts": {
-    "test": "node ./test/test.js",
-    "nocov": "node test/*.js",
-    "coverage": "istanbul cover ./test/*.js && ./node_modules/.bin/istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
-    "jshint": "jshint -c .jshintrc --exclude-path .gitignore .",
-    "start": "node ./server.js",
-    "nodemon": "nodemon ./server.js"
-  },
-  "pre-commit": [
-    "jshint",
-    "coverage"
-  ]
- }
+    "istanbul": "^0.3.14"
+  }
+}
+
