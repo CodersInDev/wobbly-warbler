@@ -28,3 +28,5 @@ node_modules
 
 # Mac users
 .DS_Store
+
+npm-debug.log
