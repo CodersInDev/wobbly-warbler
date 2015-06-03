@@ -25,7 +25,8 @@
   "homepage": "https://github.com/CodersInDev/wobbly-warbler",
   "devDependencies": {
     "istanbul": "^0.3.14",
-    "pre-commit": "0.0.9"
+    "pre-commit": "0.0.9",
+    "jshint": "^2.8.0"
   },
   "pre-commit": [
     "jshint",
