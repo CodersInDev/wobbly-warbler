@@ -11,6 +11,6 @@ request.onreadystatechange = function(){
     list.forEach(function(element){
       htmlList += "<li>" + element.content + "</li>";
     });
-    listWarbles.innerHTML = htmlList;
+    listWarbles.innerHTML = htmlList
   }
 };
